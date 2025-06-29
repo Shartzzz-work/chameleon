@@ -18,4 +18,8 @@
 	@media (width <= 1440px) {
 		--gutter: 40px;
 	}
+
+	@media (width <= 430px) {
+		--gutter: 16px;
+	}
 }
