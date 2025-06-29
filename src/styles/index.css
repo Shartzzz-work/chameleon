@@ -1,0 +1,165 @@
+@import url("./root.css");
+@import url("./reset.css");
+
+.layout {
+	margin: 0 auto;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+	width: 100%;
+}
+
+.header {
+	--display-logo: none;
+
+	align-items: center;
+	display: flex;
+	height: 123.78px;
+	justify-content: space-between;
+}
+
+.logo {
+	--size: 93.6px;
+
+	height: var(--size);
+	width: var(--size);
+}
+
+.social-list {
+	display: flex;
+	gap: 8px;
+}
+
+.social-list__item {
+	--size: 54px;
+
+	align-items: center;
+	background: var(--c-black);
+	border-radius: 50%;
+	display: flex;
+	height: var(--size);
+	justify-content: center;
+	width: var(--size);
+}
+
+.title {
+	align-items: baseline;
+	display: flex;
+	font-size: 136px;
+	gap: 0.27em;
+	justify-content: center;
+	margin-bottom: 40px;
+	margin-top: 42px;
+	text-align: center;
+
+	@media (width <= 1440px) {
+		flex-wrap: wrap;
+	}
+}
+
+.main {
+	background: var(--c-white);
+	border-radius: var(--radius);
+	display: flex;
+	gap: 60px;
+	justify-content: space-between;
+	padding-bottom: 140px;
+	padding-top: 140px;
+}
+
+.main-title {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.main-desc {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.tags-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 60px 0;
+}
+
+.tag {
+	align-items: center;
+	background: var(--c-gray);
+	border-radius: 16px;
+	display: flex;
+	font-size: 18px;
+	font-weight: 500;
+	height: 51px;
+	padding: 0 24px;
+	text-transform: uppercase;
+}
+
+.button {
+	align-items: center;
+	background: var(--c-green-3);
+	border-radius: 100px;
+	color: var(--c-green-2);
+	display: flex;
+	font-size: 24px;
+	font-weight: 500;
+	height: 68px;
+	padding: 0 32px;
+}
+
+.main-img {
+	height: auto;
+	margin-top: -55.8px;
+	max-width: 630px;
+	width: 100%;
+}
+
+.footer {
+	background: var(--c-white);
+	border-radius: var(--radius) var(--radius) 0 0;
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+	padding: 75px 40px;
+}
+
+.footer-container {
+	background-image: url("/assets/svg/footer-bg.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 42px;
+	height: 350px;
+	justify-content: center;
+	max-width: 1638px;
+	padding: 0 140px;
+	position: relative;
+	width: 100%;
+}
+
+.footer-logo {
+	align-items: center;
+	display: flex;
+	font-size: 32px;
+	gap: 20px;
+}
+
+.footer-menu {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.subfooter {
+	color: var(--c-gray-2);
+	display: flex;
+	gap: 10px;
+}
+
+.subfooter-list {
+	display: flex;
+	gap: 16px;
+	margin-left: auto;
+}

@@ -1,0 +1,21 @@
+:root {
+	--c-black: #13322b;
+	--c-white: #fff;
+	--c-gray: #f4f3f0;
+	--c-gray-2: #13322b66;
+	--c-green: #def2ac;
+	--c-green-2: #13322b;
+	--c-green-3: #92c70f;
+	--font-primary: "Poppins", sans-serif;
+	--font-size-base: 16px;
+	--c-bg-primary: var(--c-gray);
+	--c-text-primary: var(--c-black);
+	--layout: 1720px;
+	--gutter: 180px;
+	--header-height: 150px;
+	--radius: 60px;
+
+	@media (width <= 1440px) {
+		--gutter: 40px;
+	}
+}

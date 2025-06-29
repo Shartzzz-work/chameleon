@@ -1,16 +1,133 @@
 ---
-
+import "../styles/index.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/svg/logo.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chameleon English</title>
+  </head>
+  <body>
+    <header class="header layout">
+      <a href="/" class="logo-link">
+        <svg class="logo" viewBox="0 0 94 101">
+          <use href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconLogo`
+          ></use>
+        </svg>
+      </a>
+      <ul class="social-list" role="list">
+        <li>
+          <a href="#tt" class="social-list__item">
+            <svg viewBox="0 0 24 25" width="24" height="24">
+              <use href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconTt`
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#inst" class="social-list__item">
+            <svg viewBox="0 0 24 25" width="24" height="24">
+              <use
+                href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconInst`
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#yt" class="social-list__item">
+            <svg viewBox="0 0 24 25" width="24" height="24">
+              <use href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconYt`
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <h1 class="title layout">
+      <img src="/assets/svg/title.svg" alt="chameleon" class="title-img" /> English
+    </h1>
+    <main class="main layout">
+      <div class="main-content">
+        <h2 class="main-title">
+          Mike the Chameleon — the most theatrical English teacher on the
+          internet.
+        </h2>
+        <p class="main-desc">
+          The most captivating English teacher online, bringing literature to
+          life with flair!
+        </p>
+        <ul class="tags-list" role="list">
+          <li class="tag">Not a course</li>
+          <li class="tag">Not a lecture</li>
+          <li class="tag">Together</li>
+          <li class="tag">In real time</li>
+          <li class="tag">Zero theory</li>
+          <li class="tag">100% speaking</li>
+        </ul>
+        <button class="button" type="button">Ready to speak?</button>
+      </div>
+      <img src="/assets/img/main-img.png" alt="main-img" class="main-img" />
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-menu">
+          <a href="/" class="logo-link footer-logo">
+            <svg class="logo" viewBox="0 0 94 101">
+              <use
+                href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconLogo`
+              ></use>
+            </svg>
+            Chameleon English
+          </a>
+          <ul class="social-list" role="list">
+            <li>
+              <a href="#tt" class="social-list__item">
+                <svg viewBox="0 0 24 25" width="24" height="24">
+                  <use
+                    href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconTt`
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#inst" class="social-list__item">
+                <svg viewBox="0 0 24 25" width="24" height="24">
+                  <use
+                    href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconInst`
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#yt" class="social-list__item">
+                <svg viewBox="0 0 24 25" width="24" height="24">
+                  <use
+                    href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconYt`
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subfooter">
+          <span>Powered by</span>
+          <a href="#">Opinionated Schools</a>
+          <ul class="subfooter-list" role="menu">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">© 2025 Chameleon English</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
