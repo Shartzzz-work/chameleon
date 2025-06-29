@@ -7,7 +7,7 @@ import "../styles/index.css";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/svg/logo.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Chameleon English" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@ import "../styles/index.css";
   </head>
   <body>
     <header class="header layout">
-      <a href="/" class="logo-link">
+      <a href="/" class="logo-link" title="logo">
         <svg class="logo" viewBox="0 0 94 101">
           <use href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconLogo`
           ></use>
@@ -26,7 +26,7 @@ import "../styles/index.css";
       </a>
       <ul class="social-list social-list__header" role="list">
         <li>
-          <a href="#tt" class="social-list__item">
+          <a href="#tt" class="social-list__item" title="tiktok">
             <svg viewBox="0 0 24 25" width="24" height="24">
               <use href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconTt`
               ></use>
@@ -34,7 +34,7 @@ import "../styles/index.css";
           </a>
         </li>
         <li>
-          <a href="#inst" class="social-list__item">
+          <a href="#inst" class="social-list__item" title="instagram">
             <svg viewBox="0 0 24 25" width="24" height="24">
               <use
                 href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconInst`
@@ -43,7 +43,7 @@ import "../styles/index.css";
           </a>
         </li>
         <li>
-          <a href="#yt" class="social-list__item">
+          <a href="#yt" class="social-list__item" title="youtube">
             <svg viewBox="0 0 24 25" width="24" height="24">
               <use href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconYt`
               ></use>
@@ -77,7 +77,7 @@ import "../styles/index.css";
         </ul>
         <button class="button" type="button">Ready to speak?</button>
       </div>
-      <img src="/assets/img/main-img.png" alt="main-img" class="main-img" />
+      <img src="/assets/img/main-img.webp" alt="main-img" class="main-img" />
     </main>
     <footer class="footer">
       <div class="footer-container">
@@ -92,7 +92,7 @@ import "../styles/index.css";
           </a>
           <ul class="social-list" role="list">
             <li>
-              <a href="#tt" class="social-list__item">
+              <a href="#tt" class="social-list__item" title="tiktok">
                 <svg viewBox="0 0 24 25" width="24" height="24">
                   <use
                     href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconTt`
@@ -101,7 +101,7 @@ import "../styles/index.css";
               </a>
             </li>
             <li>
-              <a href="#inst" class="social-list__item">
+              <a href="#inst" class="social-list__item" title="instagram">
                 <svg viewBox="0 0 24 25" width="24" height="24">
                   <use
                     href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconInst`
@@ -110,7 +110,7 @@ import "../styles/index.css";
               </a>
             </li>
             <li>
-              <a href="#yt" class="social-list__item">
+              <a href="#yt" class="social-list__item" title="youtube">
                 <svg viewBox="0 0 24 25" width="24" height="24">
                   <use
                     href=`/assets/sprites/sprite-main.svg?v=${Date.now()}#iconYt`
@@ -124,9 +124,9 @@ import "../styles/index.css";
           <span>Powered by</span>
           <a href="#" class="link">Opinionated Schools</a>
           <ul class="subfooter-list" role="menu">
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">© 2025 Chameleon English</a></li>
+            <li role="menuitem"><a href="#">Terms & Conditions</a></li>
+            <li role="menuitem"><a href="#">Privacy Policy</a></li>
+            <li role="menuitem"><a href="#">© 2025 Chameleon English</a></li>
           </ul>
         </div>
       </div>
